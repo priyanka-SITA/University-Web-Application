@@ -95,7 +95,8 @@ nav {
 .row {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
+  margin: 5px;
+  column-gap: 20px;
 }
 .course-col {
   flex-basis: 31%;
@@ -166,7 +167,7 @@ nav {
   opacity: 1;
 }
 .facilities {
-  width: 100%;
+  width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -197,17 +198,16 @@ nav {
 .testimonials {
   text-align: center;
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 .testimonials-col {
-  flex-basis: 44%;
   border-radius: 10px;
   margin-bottom: 5px;
   text-align: center;
   padding: 25px;
   padding-bottom: 10px;
   cursor: pointer;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px burlywood;
 }
 .testimonials-col img {
   border-radius: 30px;
@@ -220,10 +220,22 @@ nav {
 .testimonials-col h3 {
   padding-top: 10px;
 }
-.contact {
-  margin: 100px auto;
 
-  background-image: url("https://community.thriveglobal.com/wp-content/uploads/2019/09/Effective-Meeting-Diverse.jpg");
+.enroll {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://community.thriveglobal.com/wp-content/uploads/2019/09/Effective-Meeting-Diverse.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.enroll h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
 }
 .footer {
   width: 100%;
@@ -354,4 +366,26 @@ nav {
 }
 .location img {
   width: 100%;
+}
+.contact_us {
+  width: 80%;
+  margin: auto;
+}
+.contact_col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact_col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-col input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
 }
